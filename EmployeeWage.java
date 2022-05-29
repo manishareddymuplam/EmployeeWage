@@ -5,10 +5,17 @@ public class EmployeeWage {
 		System.out.println("Welcom to Employee Wage Camputation Program");	
 		Random random  = new Random();
 		int attendance = random.nextInt(2);
-		if(attendance == 1)
+		int wagePerHour=20;
+		int fullDayHours=8;
+		int wagePerDay=8;
+		
+		if(attendance == 1) {
 			System.out.println("Employee Present");
+		    wagePerDay = wagePerHour * fullDayHours;
+	}
 		else
 			System.out.println("Employee Absent");
+		System.out.println("Employee Wage Per Day:" + wagePerDay);
 	}
 }
 
